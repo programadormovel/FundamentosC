@@ -87,15 +87,73 @@ int main(int argc, char *argv[]) {
 //	int condicao = 0;
 //	condicao==1 ? printf("%s \n", "verdade") : printf("%s \n", "falsidade");
 	
-	// 14 - obter o tamanho da variável
-	int age = 37;
-	printf("%ld\n", sizeof(age));
-	printf("%ld", sizeof(int));
+//	// 14 - obter o tamanho da variável
+//	int idade = 37;
+//	printf("%ld\n", sizeof(idade));
+//	printf("%ld", sizeof(int));
 			
-
-
+//	// 15 - precedência dos operadores
+//	double nota1 = 5.5;
+//	double nota2 = 6.5;
+//	double nota3 = 9.0;
+//	double media = nota1 + nota2 + nota3 / 3;
+//	printf("%g \n", media);
+//	media = (nota1 + nota2 + nota3) / 3;
+//	printf("%g \n", media);
 	
-	
+//	// 16 - Condicionais
+//	int a = 10;
+//	// linha
+//	if(a==10) printf("%s \n", "verdade"); else printf("%s \n", "falsidade");
+//	// sem chaves
+//	if(a==10) 
+//		printf("%s \n", "verdade"); 
+//	else 
+//		printf("%s \n", "falsidade");	
+//	// com chaves
+//	if(a==10) {
+//		printf("%s \n", "verdade"); 
+//	}
+//	else {
+//		printf("%s \n", "falsidade");
+//	}	
+//	// encadeado
+//	if(a==10) {
+//		printf("%s \n", "verdade"); 
+//	}
+//	else if(a==20){
+//		printf("%s \n", "outra opção"); 
+//	}
+//	else {
+//		printf("%s \n", "falsidade");
+//	}
+//	// aninhado
+//	if(a==10) {
+//		printf("%s \n", "verdade"); 
+//		 if(a==20){
+//			printf("%s \n", "outra opção"); 
+//		} else {
+//			printf("%s \n", "falsidade");
+//		}
+//	} else {
+//		printf("%s \n", "falsidade");
+//	}
+		
+	// 17 - Seletor de opções
+	int a = 1;
+
+	switch (a) {
+	  case 0:
+	    printf("%s \n", "opção 0"); 
+	    break;
+	  case 1:
+	    printf("%s \n", "opção 1"); 
+	    break;
+	  case 2:
+	    printf("%s \n", "opção 2"); 
+	    break;
+	}
+			
 	//system("pause");
 	return 0;
 }
