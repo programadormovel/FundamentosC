@@ -139,20 +139,116 @@ int main(int argc, char *argv[]) {
 //		printf("%s \n", "falsidade");
 //	}
 		
-	// 17 - Seletor de opções
-	int a = 1;
+//	// 17 - Seletor de opções
+//	int a = 1;
+//
+//	switch (a) {
+//	  case 0:
+//	    printf("%s \n", "opção 0"); 
+//	    break;
+//	  case 1:
+//	    printf("%s \n", "opção 1"); 
+//	    break;
+//	  case 2:
+//	    printf("%s \n", "opção 2"); 
+//	    break;
+//	}
+	
+//	// 18 - Seletor de opções com opção padrão
+//	int a = 1;
+//
+//	switch (a) {
+//	case 0:
+//		printf("%s \n", "opção 0"); 
+//		break;
+//	case 1:
+//		printf("%s \n", "opção 1"); 
+//		break;
+//	case 2:
+//		printf("%s \n", "opção 2"); 
+//		break;
+//	default:
+//		printf("%s \n", "opção padrão"); 
+//		break;
+//	}
 
-	switch (a) {
-	  case 0:
-	    printf("%s \n", "opção 0"); 
-	    break;
-	  case 1:
-	    printf("%s \n", "opção 1"); 
-	    break;
-	  case 2:
-	    printf("%s \n", "opção 2"); 
-	    break;
-	}
+//	// 19 - Laço para faça
+//	for (int i = 0; i < 10; i++) {
+//	  printf("%u \n", i); 
+//	}
+//	system("pause");
+//	// <=
+//	for (int i = 0; i <= 10; i++) {
+//	  printf("%u \n", i); 
+//	}
+//	system("pause");
+//	// >
+//	for (int i = 10; i > 0; i--) {
+//	  printf("%u \n", i); 
+//	}
+//	system("pause");
+//	// 
+//	for (int i = 0; i < 1000; i = i + 30) {
+//	  printf("%u \n", i); 
+//	}
+//	system("pause");
+	
+//	// 20 - laço enquanto
+//	int i = 0;
+//
+//	while (i < 10) {
+//	  printf("%u \n", i); 
+//	
+//	  i++;
+//	}
+	
+//	// 21 - laço faça enquanto
+//	int i = 0;
+//
+//	do {
+//	  printf("%u \n", i); 
+//	
+//	  i++;
+//	} while (i < 10);
+	
+//	// 22 - laço enquanto
+//	int condicao = 1;
+//
+//	while (condicao == 1) {
+//	  printf("%u \n", condicao); 
+//	
+//	  printf("Deseja continuar o laço de repetição? (Digite 1 para continuar): ");
+//	  scanf("%u", &condicao);
+//	}
+//	printf("fim do laço enquanto com condição!");
+	
+//	// 23 - enquanto com interrupção forçada do programa
+//	int i = 0;
+//	while (1) {
+//	  printf("%u \n", i); 
+//	
+//	  i++;
+//	  if (i == 10) break;
+//	}
+		
+//	// 24 - laço de repetição com interrupção forçada
+//	int x = 10;
+//	for (int i = 0; i <= 10; i++) {
+//	  
+//	  printf("%u \n", i); 
+//	  	
+//	  if (i == 4 && x == 10) {
+//	    break;
+//	  }
+//	}
+	
+	
+	
+	
+	
+	
+	
+	
 			
 	//system("pause");
 	return 0;
