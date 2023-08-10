@@ -218,7 +218,7 @@ int main(int argc, char *argv[]) {
 //	  printf("%u \n", condicao); 
 //	
 //	  printf("Deseja continuar o laço de repetição? (Digite 1 para continuar): ");
-//	  scanf("%u", &condicao);
+//	  scanf("%u", &condicao); // entrada de dados
 //	}
 //	printf("fim do laço enquanto com condição!");
 	
@@ -242,14 +242,59 @@ int main(int argc, char *argv[]) {
 //	  }
 //	}
 	
+//	// 25 - vetores
+//	int numero[5] = { 1, 2, 3, 4, 5 };
+//	for(int x = 0; x < 5; x++){
+//		printf("%u \n", numero[x]); 
+//	}
+	//
+//	const int TAM = 5;
+//	int vetor[TAM];
+//	vetor[0]=5;
+//	vetor[1]=4;
+//	vetor[2]=5;
+//	vetor[3]=4;
+//	vetor[4]=5;
+//	for(int x = 0; x < TAM; x++){
+//		printf("%u \n", vetor[x]); 
+//	}
+//	// 
+//	const int TAM = 5;
+//	int vetor[TAM];
+//	// laço de entrada
+//	for(int x = 0; x < TAM; x++){	
+//		printf("\n Entre com um valor na posição %u  : ", x);
+//		scanf("%u", &vetor[x]); // entrada de dados 
+//	}
+//	// laço de saída
+//	for(int x = 0; x < TAM; x++){
+//		printf("\n\n %u \t", vetor[x]); 
+//	}
 	
+//	// 26 - Vetor de caracter
+//	char nome[8] = { 'A', 'd', 'r', 'i', 'a', 'n', 'o', '\0' };
+//	printf("%s", nome);
+//	
+//	// caracter de finalização omitido
+//	char nome[8] = { 'A', 'd', 'r', 'i', 'a', 'n', 'o' };
+//	printf("%s", nome);
 	
+	// ponteiros
+	int idade = 46;
+	printf("%p \n", &idade); // endereço da variável idade na memória
 	
+	// guardando endereço da variável idade
+	int *endereco = &idade;
+	printf("%u \n", *endereco); // apontando para o valor da variável idade
 	
-	
+	//
+	*endereco = 47;
+	printf("%u \n", *endereco);
+	printf("%p \n", &idade);
+	printf("%u \n", idade);
 	
 	
 			
 	//system("pause");
-	return 0;
+	//return 0;
 }
