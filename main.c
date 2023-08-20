@@ -493,19 +493,37 @@ int main(int argc, char *argv[]) {
 //	free(nome);
 	
 	// 36 - alocação dinâmica de memória
-	//int x = 9999999999;
-	//printf("%d", x);
+////	int x = 9999999999;
+////	printf("%u", x);
+//
+//	int n = 10;
+//	int *nova = (int*) malloc(n*sizeof(int));
+//	
+//	// laço de entrada
+//	for(int x=0; x < n; x++){
+//	  nova[x]=1400000001;
+//	}
+//	// laço de saída
+//	for(int x=0; x<n; x++)
+//	  printf("%d", nova[x]);
+//
+//	// continuação do exercício acima
+//	printf("\n");
+//	printf("\n");
+//	n = 20;
+//	nova = (int *) realloc(nova, n*sizeof(int));
+//	
+//	// laço de entrada
+//	for(int x=0; x < n; x++){
+//	  nova[x]=1400000001;
+//	}
+//	// laço de saída
+//	for(int x=0; x<n; x++)
+//	  printf("%d", nova[x]);
+//	
+//	printf("\n");
 
-	int *nova = (int*) malloc(10*sizeof(int));
-	
-	for(int x=0; x < 10; x++){
-	  nova[x]=9;
-	}
-
-	for(int x=0; x<10; x++)
-	  printf("%d", nova[x]);
-
-	printf("\n");
+	// 37 - 
 	
 	return 0;
 }
