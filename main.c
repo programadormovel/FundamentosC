@@ -492,5 +492,20 @@ int main(int argc, char *argv[]) {
 	
 	free(nome);
 	
+	// 36 - alocação dinâmica de memória
+	//int x = 9999999999;
+	//printf("%d", x);
+
+	int *nova = (int*) malloc(10*sizeof(int));
+	
+	for(int x=0; x < 10; x++){
+	  nova[x]=9;
+	}
+
+	for(int x=0; x<10; x++)
+	  printf("%d", nova[x]);
+
+	printf("\n");
+	
 	return 0;
 }
