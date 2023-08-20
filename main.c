@@ -477,20 +477,20 @@ int main(int argc, char *argv[]) {
 //	
 //	free(nome);
 	
-	// 35 - alocação dinâmica - calloc
-	char *nome;
-	nome = (char *) calloc(10, sizeof(char));
-	free(nome);
-	
-    printf("Entre com um texto qualquer: ");
-    fgets(nome, 10, stdin);
- 
- 	printf("\n %s \n", nome);   
-    printf("\n Quantidade de caracteres armazenados: %d \n", strlen(nome));
-    printf("\n Endereço do ponteiro *nome: %p \n", &nome);
-    printf("\n Endereço do valor armazenado pelo ponteiro *nome: %p \n", nome);
-	
-	free(nome);
+//	// 35 - alocação dinâmica - calloc
+//	char *nome;
+//	nome = (char *) calloc(10, sizeof(char));
+//	free(nome);
+//	
+//    printf("Entre com um texto qualquer: ");
+//    fgets(nome, 10, stdin);
+// 
+// 	printf("\n %s \n", nome);   
+//    printf("\n Quantidade de caracteres armazenados: %d \n", strlen(nome));
+//    printf("\n Endereço do ponteiro *nome: %p \n", &nome);
+//    printf("\n Endereço do valor armazenado pelo ponteiro *nome: %p \n", nome);
+//	
+//	free(nome);
 	
 	// 36 - alocação dinâmica de memória
 	//int x = 9999999999;
