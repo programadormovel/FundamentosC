@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 extern int tomate = 0;
@@ -435,35 +435,62 @@ int main(int argc, char *argv[]) {
 //	int resultado = somar(5, 8);
 //	printf("\n %d", resultado);
 	
-	// 33.1 - troca de valores
-	int a = 6, b = 2;
-	troca1(a, b);
-	printf("\n a=%d \n b=%d", a, b);
-	system("pause");
+//	// 33.1 - troca de valores
+//	int a = 6, b = 2;
+//	troca1(a, b);
+//	printf("\n a=%d \n b=%d", a, b);
+//	system("pause");
+//	
+//	// 33.2 - troca de valores com ponteiros
+//	a = 6, b = 2;
+//	troca2(&a, &b);
+//	printf("\n Com ponteiros: \n a=%d \n b=%d", a, b);	
+//	system("pause");
+//	
+//	// 33.3 - troca de valores
+//	a = 6, b = 2;
+//	troca3(a, b);
+//	
+//	printf("\n a=%d \n b=%d", a, b);
+//	printf("\n Com variáveis, saída dos endereços de a e b: \n a=%p \n b=%p", &a, &b);
+//	system("pause");
+//	
+//	// 33.4 - troca de valores com ponteiros
+//	a = 6, b = 2;
+//	troca4(&a, &b);
+//	printf("\n Com ponteiros: \n a=%d \n b=%d", a, b);
+//	printf("\n Com ponteiros, saída dos endereços de a e b: \n a=%p \n b=%p", a, b);
+//	system("pause");
 	
-	// 33.2 - troca de valores com ponteiros
-	a = 6, b = 2;
-	troca2(&a, &b);
-	printf("\n Com ponteiros: \n a=%d \n b=%d", a, b);	
-	system("pause");
+//	// 34 - alocação dinâmica - malloc
+//	char *nome;
+//	nome = (char *) malloc(10 * sizeof(char));
+//	free(nome);
+//	
+//    printf("Entre com um texto qualquer: ");
+//    fgets(nome, 10, stdin);
+// 
+// 	printf("\n %s \n", nome);   
+//    printf("\n Quantidade de caracteres armazenados: %d \n", strlen(nome));
+//    printf("\n Endereço do ponteiro *nome: %p \n", &nome);
+//    printf("\n Endereço do valor armazenado pelo ponteiro *nome: %p \n", nome);
+//	
+//	free(nome);
 	
-	// 33.3 - troca de valores
-	a = 6, b = 2;
-	troca3(a, b);
+	// 35 - alocação dinâmica - calloc
+	char *nome;
+	nome = (char *) calloc(10, sizeof(char));
+	free(nome);
 	
-	printf("\n a=%d \n b=%d", a, b);
-	printf("\n Com variáveis, saída dos endereços de a e b: \n a=%p \n b=%p", &a, &b);
-	system("pause");
+    printf("Entre com um texto qualquer: ");
+    fgets(nome, 10, stdin);
+ 
+ 	printf("\n %s \n", nome);   
+    printf("\n Quantidade de caracteres armazenados: %d \n", strlen(nome));
+    printf("\n Endereço do ponteiro *nome: %p \n", &nome);
+    printf("\n Endereço do valor armazenado pelo ponteiro *nome: %p \n", nome);
 	
-	// 33.4 - troca de valores com ponteiros
-	a = 6, b = 2;
-	troca4(&a, &b);
-	printf("\n Com ponteiros: \n a=%d \n b=%d", a, b);
-	printf("\n Com ponteiros, saída dos endereços de a e b: \n a=%p \n b=%p", a, b);
-	system("pause");
+	free(nome);
 	
-	
-	//system("pause");
-	//return 0;
+	return 0;
 }
-
