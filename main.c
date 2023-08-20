@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 extern int tomate = 0;
@@ -8,6 +9,10 @@ extern int tomate = 0;
 // módulo procedimento
 void imprimir(char texto[]){
 	printf("\n %s", texto);
+	// limpando memória
+	for(int x=0; x<strlen(texto); x++){
+		texto[x] = ' ';
+	}
 }
 
 // módulo função
@@ -55,6 +60,30 @@ void troca4(int *a, int *b){
 }
 
 
+	// 37 - TAD - Tipo Abstrato de Dados
+	typedef struct{
+		int numero;
+		double saldo;
+	}contabancaria;
+	
+	void inicia(contabancaria* conta, int numero, double saldo){
+		(*conta).numero = numero;
+		(*conta).saldo = saldo;
+	}
+	
+	void deposito(contabancaria* conta, double valor){
+		(*conta).saldo += valor;
+	}
+	
+	void saque(contabancaria* conta, double valor){
+		(*conta).saldo -= valor;
+	}
+	
+	void imprime(contabancaria conta){
+		printf("Número: %d\n", conta.numero);
+		printf("Saldo: %10.2f\n", conta.saldo);
+	}
+	
 int main(int argc, char *argv[]) {
 	
 //	//1 - iniciando em C
@@ -523,7 +552,37 @@ int main(int argc, char *argv[]) {
 //	
 //	printf("\n");
 
-	// 37 - 
+	// 37 - Utilizando um TAD - Tipo Abstrato de Dados
+//	contabancaria conta1;
+//	contabancaria conta2;
+//	contabancaria conta3;
+//	
+//	inicia(&conta1, 12345, 100.00);
+//	inicia(&conta2, 12346, 1000.00);
+//	inicia(&conta3, 12347, 1000000.00);
+//	
+//	system("cls");
+//	
+//	printf("\n Antes da movimentação: \n");
+//	imprime(conta1);
+//	imprime(conta2);
+//	
+//	deposito(&conta1, 50.00);
+//	saque(&conta2, 130.00);
+//	
+//	printf("\n Depois da movimentação: \n");
+//	imprime(conta1);
+//	imprime(conta2);
+
+	// 38 - limpando memória utilizada - continuação do 32
+	// procedimento
+	char enviandoTexto[7] = {'A', 'u', 'l', 'a', ' ', 'C'};
+	imprimir(enviandoTexto);
 	
+	enviandoTexto[0] = 'O';
+	enviandoTexto[1] = 'i';
+	imprimir(enviandoTexto);
+	
+		
 	return 0;
 }
